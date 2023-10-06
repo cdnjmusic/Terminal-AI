@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const { API_KEY } = require('./config');
+
 console.log('Terminal-AI here!');
 
 // Handle the command-line arguments (in this case, a prompt)
