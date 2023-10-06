@@ -1,0 +1,14 @@
+{
+  "name": "terminal-ai",
+  "version": "1.0.0",
+  "description": "Terminal-based AI assistant for developers.",
+  "main": "bin/terminal-ai.js",
+  "bin": {
+    "tai": "bin/terminal-ai.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/terminal-ai.git"
+  }
+}
