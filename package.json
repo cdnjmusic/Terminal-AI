@@ -6,9 +6,9 @@
   "bin": {
     "tai": "bin/terminal-ai.js"
   },
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/terminal-ai.git"
+    "url": "https://github.com/cdnjmusic/Terminal-AI.git"
   }
 }
