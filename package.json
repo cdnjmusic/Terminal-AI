@@ -1,6 +1,6 @@
 {
   "name": "terminal-ai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Terminal-based AI assistant for developers.",
   "main": "terminal-ai.js",
   "bin": {
