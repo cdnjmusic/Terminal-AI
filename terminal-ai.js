@@ -29,7 +29,7 @@ if (args.length === 0) {
       const response = await client.completions.create({
         model: 'text-davinci-003', // Choose the engine you want
         prompt: prompt,
-        max_tokens: 50, // Adjust the number of tokens as needed
+        max_tokens: 100, // Adjust the number of tokens as needed
       });      
 
       return response.choices[0].text;
