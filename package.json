@@ -1,10 +1,10 @@
 {
   "name": "terminal-ai",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Terminal-based AI assistant for developers.",
-  "main": "bin/terminal-ai.js",
+  "main": "terminal-ai.js",
   "bin": {
-    "tai": "bin/terminal-ai.js"
+    "tai": "terminal-ai.js"
   },
   "license": "GNU General Public License v3.0",
   "repository": {
@@ -14,5 +14,9 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "openai": "^4.11.1"
-  }
+  },
+  "scripts": {
+    "start": "node terminal-ai.js"
+  },
+  "preferGlobal": true
 }

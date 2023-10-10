@@ -1,7 +1,9 @@
-const openai = require('openai');
+#!/usr/bin/env node
 
 // Use your own API Key to authenticate
 require('dotenv').config();
+const openai = require('openai');
+
 const apiKey = process.env.OPENAI_API_KEY; // Corrected
 const client = new openai({ apiKey });
 
@@ -11,7 +13,7 @@ console.log('Terminal-AI here!');
 const args = process.argv.slice(2);
 
 if (args.length === 0) {
-  console.error('Usage: tai <prompt>');
+  console.error('Usage: npm start <prompt>');
 } else {
   const prompt = args.join(' ');
 
@@ -25,11 +27,10 @@ if (args.length === 0) {
   async function getGpt3Response(prompt) {
     try {
       const response = await client.completions.create({
-        engine: 'text-davinci-002', // Choose the engine you want
+        model: 'text-davinci-003', // Choose the engine you want
         prompt: prompt,
         max_tokens: 50, // Adjust the number of tokens as needed
-        model: 'davinci'
-      });
+      });      
 
       return response.choices[0].text;
     } catch (error) {
